@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 445065765533349445, guid: df5ce1fe8761a214089c490b26f4435f, type: 3}
+      propertyPath: isPlaceble
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3578776702357176003, guid: df5ce1fe8761a214089c490b26f4435f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -53,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3578776702357176004, guid: df5ce1fe8761a214089c490b26f4435f, type: 3}
       propertyPath: m_Name
-      value: (0, 0)
+      value: Corner_Road_Tile
       objectReference: {fileID: 0}
     - target: {fileID: 5878790557951942089, guid: df5ce1fe8761a214089c490b26f4435f, type: 3}
       propertyPath: m_Mesh
