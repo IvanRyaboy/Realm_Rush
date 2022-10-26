@@ -31,6 +31,26 @@ PrefabInstance:
       propertyPath: m_text
       value: 0,1
       objectReference: {fileID: 0}
+    - target: {fileID: 3633898311013030157, guid: c7483b7aebf917b4798b37215fcf5055, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3633898311013030157, guid: c7483b7aebf917b4798b37215fcf5055, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3633898311013030157, guid: c7483b7aebf917b4798b37215fcf5055, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3633898311013030157, guid: c7483b7aebf917b4798b37215fcf5055, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3633898311013030157, guid: c7483b7aebf917b4798b37215fcf5055, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
     - target: {fileID: 6006489377702199520, guid: c7483b7aebf917b4798b37215fcf5055, type: 3}
       propertyPath: m_Name
       value: Forward_Road_Tile_Side
