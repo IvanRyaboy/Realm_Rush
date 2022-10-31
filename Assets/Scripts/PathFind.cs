@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Enemy))]
 public class PathFind : MonoBehaviour
 {
     [SerializeField] List<Waypoint> path = new List<Waypoint>();
     [SerializeField] [Range(0f, 5f)] float Speed = 1f;
+
+    Enemy enemy;
 
     void OnEnable()
     {
@@ -14,15 +17,26 @@ public class PathFind : MonoBehaviour
         StartCoroutine(FollowPath());
     }
 
+    void Start()
+    {
+        enemy = GetComponent<Enemy>();
+    }
+
     void FindPath()
     {
         path.Clear();
 
-        GameObject[] waypoints = GameObject.FindGameObjectsWithTag("Path");
+        GameObject[] tiles = GameObject.FindGameObjectsWithTag("Path");
 
-        foreach(GameObject waypoint in waypoints)
+        foreach(GameObject tile in tiles) 
         {
-            path.Add(waypoint.GetComponent<Waypoint>());
+            Waypoint waypoint = tile.GetComponent<Waypoint>();
+
+            if(waypoint != null)
+            {
+                path.Add(waypoint);
+            }
+
         }
     }
 
@@ -46,8 +60,15 @@ public class PathFind : MonoBehaviour
                 yield return new WaitForEndOfFrame();
             }
         }
+        enemy.StealGold();
         gameObject.SetActive(false);
     }
+
+    void FinishPath()
+    {
+        FinishPath();
+    }
+
 
 }
 

@@ -5,8 +5,8 @@ using UnityEngine;
 public class OpbjectPool : MonoBehaviour
 {
     public GameObject enemy;
-    [SerializeField] int poolSize = 5;
-    [SerializeField] float waitTime = 1f;
+    [SerializeField] [Range(0,50)] int poolSize = 5;
+    [SerializeField] [Range(0.1f, 30f)]float spawnTimer = 1f;
 
     GameObject[] pool;
 
@@ -48,7 +48,7 @@ public class OpbjectPool : MonoBehaviour
         while (true)
         {
             EnableObjectInPool();
-            yield return new WaitForSeconds(waitTime);
+            yield return new WaitForSeconds(spawnTimer);
         }
     }
 }
