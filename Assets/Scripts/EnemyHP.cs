@@ -26,7 +26,7 @@ public class EnemyHP : MonoBehaviour
 
     private void ProcessHit()
     {
-        currentHP--;
+        currentHP --;
         if (currentHP <= 0)
         {
             gameObject.SetActive(false);
